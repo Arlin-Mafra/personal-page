@@ -1,0 +1,62 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+  {% block head %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Cursos</title>
+
+  {% endblock %}
+
+  <h1 class="title">Cursos</h1>
+  <section class="content">
+    {% for item in itens %}
+      <div class="card" id="{{item.id}}">
+        <div class="card-image-curse">
+          <img class="img" src="{{item.image}}" alt="card-1"/>
+        </div>
+        <div class="card-info-curse">
+          <h3>{{item.title}}</h3>
+          <p>{{item.periodo}}</p>
+          <h4>{{item.price}}</h4>
+        </div>
+      </div>
+    {% endfor %}
+
+  </section>
+  <div class="modal-overlay-curse">
+    <div class="modal-curse">
+      <a class="close-modal-curse">
+        <span class="material-icons">
+          close
+        </span>
+      </a>
+      <a class="max-modal-curse">
+        <span class="material-icons">
+          maximize
+        </span>
+      </a>
+      <a class="min-modal-curse">
+        <span class="material-icons">
+          minimize
+        </span>
+      </a>
+
+      <div class="modal-content-curse">
+        <iframe class="curse" src="" frameborder="0">
+          <img src="" alt=""/>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="/scripts/scripts-curse.js"></script>
+{% endblock %}
+<footer class="links">
+  <p>
+    <a href="https://github.com/Arlin-Mafra" target="_blank">GitHub</a>
+  </p>
+</footer>
+</body>
+</html>

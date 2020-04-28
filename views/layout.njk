@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon"/>
+    {% block head %}
+
+      <title>Personal Page</title>
+    {% endblock %}
+    <link rel="stylesheet" href="/styles.css"/>
+  </head>
+  <body>
+    <header class="links">
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="https://discordapp.com/invite/gCRAFhc" target="_blank">Comunidade</a >
+        </li>
+        <li>
+          <a href="mailto://arlinsantana@gmail.com">Email</a>
+        </li>
+        <li>
+          <a href="/cursos">Cursos</a>
+        </li>
+        <li>
+          <a href="https://rocketseat.com.br/" target="_blank">Sobre</a>
+        </li>
+        <li>
+          <a href="/aulas">Aulas</a>
+        </li>
+      </ul>
+    </header>
+    {% block content %}{% endblock %}
+
+    <footer class="links">
+      <p>
+        <a href="https://github.com/Arlin-Mafra" target="_blank">GitHub</a>
+      </p>
+    </footer>
+  </body>
+</html>

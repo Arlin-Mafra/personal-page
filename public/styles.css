@@ -1,0 +1,236 @@
+@import "https://fonts.googleapis.com/css?family=Roboto&display=swap";
+
+:root {
+  --color-green: springgreen;
+}
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+.title {
+  color: aliceblue;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+}
+body {
+  background: #686a72;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  background: slategrey;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  padding: 30px;
+  justify-content: center;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  margin-bottom: 10px;
+  list-style: none;
+  padding: 10px;
+}
+header ul li a {
+  font-size: 15px;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 18px;
+}
+
+header ul li :hover {
+  color: var(--color-green);
+  transition: 200ms;
+}
+#personal {
+  text-align: center;
+  color: aliceblue;
+  padding: 32px;
+}
+#personal img {
+  width: 300px;
+  height: 300px;
+  margin-top: 100px;
+  border-radius: 50%;
+  border: 5px solid cadetblue;
+}
+#personal h1 {
+  font-weight: bold;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+footer p a {
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-green);
+  color: aliceblue;
+  font-size: 30px;
+}
+footer p a:hover {
+  color: var(--color-green);
+}
+/*==CARDS==*/
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.card {
+  background-color: teal;
+}
+.card-image img {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.card-image-curse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.card-info {
+  color: aliceblue;
+  padding: 24px;
+  text-align: center;
+}
+/*==MODAL==*/
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.modal {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  margin: 5vh auto;
+  position: relative;
+}
+
+.modal .close-modal {
+  color: #000;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+
+/*==MODAL ACTIVE==*/
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+iframe {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 5%;
+}
+/*==MODAL-OVERLAY-CURSE==*/
+
+.modal-overlay-curse {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-curse {
+  background-color: white;
+  width: 70%;
+  height: 80%;
+  margin: 5vh auto;
+  position: relative;
+}
+
+.modal-curse .close-modal-curse {
+  color: #000;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+.modal-overlay-curse.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*icon*/
+.modal-curse .max-modal-curse {
+  color: #000;
+  position: absolute;
+  right: 60px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.modal-curse .min-modal-curse {
+  color: #000;
+  position: absolute;
+  right: 35px;
+  top: 5px;
+  cursor: pointer;
+}
+.card-info-curse {
+  color: aliceblue;
+  padding: 24px;
+  justify-content: center;
+  margin-left: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-info-curse p {
+  text-align: right;
+}
+.card-info-curse h4 {
+  margin-top: 20px;
+  text-align: left;
+}
+.modal-curse.max {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  margin: 5vh auto;
+  position: relative;
+}
+
+.modal-curse.min {
+  background-color: white;
+  width: 40%;
+  height: 60%;
+  margin: 6vh auto;
+  position: relative;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.error h1 {
+  text-align: center;
+  font-size: 40px;
+}

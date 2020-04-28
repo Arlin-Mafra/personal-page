@@ -1,0 +1,35 @@
+const express = require("express");
+const nunjucks = require("nunjucks");
+const videos = require('./data/dataAulas')
+const cursos = require('./data/dataCursos')
+
+const server = express();
+
+server.use(express.static("public"));
+
+server.set("view engine", "njk");
+
+nunjucks.configure("views", {
+  express: server,
+});
+
+server.get("/", (req, res) => {
+  return res.render("index");
+});
+
+server.get("/cursos", (req, res) => {
+  return res.render("cursos", {itens:cursos});
+});
+
+server.get("/aulas", (req, res) => {
+  return res.render("aulas",  {itens : videos} );
+});
+
+
+server.use(function(req, res) {
+  res.status(404).render("not-found");
+})
+
+server.listen(5000, () => {
+  console.log("Server is running");
+});
