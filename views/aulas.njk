@@ -16,24 +16,15 @@
         <div class="card-image">
           <img class="img" src="{{item.image}}" alt="card-1"/>
         </div>
+        {% if item.featured %}
+          <div class="featured">Destaque</div>
+        {% endif %}
         <div class="card-info">
           <p>{{item.info}}</p>
         </div>
       </div>
     {% endfor %}
   </section>
-  <div class="modal-overlay">
-    <div class="modal">
-      <a class="close-modal">
-        <span class="material-icons">
-          close
-        </span>
-      </a>
-      <div class="modal-content">
-        <iframe src="" frameborder="0"></iframe>
-      </div>
-    </div>
-  </div>
 
   <script src="/scripts/scripts.js"></script>
 {% endblock %}

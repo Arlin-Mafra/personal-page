@@ -25,11 +25,22 @@ server.get("/aulas", (req, res) => {
   return res.render("aulas",  {itens : videos} );
 });
 
+server.get("/video", (req, res) => {
+  const id = req.query.id
+  const video = videos.find(function (video){
+      return video.id === id
+  })
+
+  if(!video){
+    return res.send("Video not found!")
+  }
+
+  return res.render("video", {item:video})
+});
+
 
 server.use(function(req, res) {
   res.status(404).render("not-found");
 })
 
-server.listen(5000, () => {
-  console.log("Server is running");
-});
+server.listen(5000);

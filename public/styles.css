@@ -83,6 +83,7 @@ footer p a:hover {
   max-width: 800px;
   margin: 0 auto;
   display: grid;
+  cursor: pointer;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
@@ -233,4 +234,34 @@ iframe {
 .error h1 {
   text-align: center;
   font-size: 40px;
+}
+
+/*=== Featured === */
+.card {
+  position: relative;
+}
+
+.featured {
+  background: #fff;
+  padding: 4px 16px;
+  border-radius: 4px;
+  position: absolute;
+  top: -12px;
+  right: 4px;
+}
+
+/*===Video ===*/
+.video {
+  margin: 0 auto;
+  max-width: 700px;
+}
+.card-video {
+  position: relative;
+  padding-top: 62%;
+}
+.card-video iframe {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 0;
 }

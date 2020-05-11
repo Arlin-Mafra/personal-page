@@ -2,7 +2,8 @@ module.exports = [
   {
     id:"wKqEwKP-E1E",
     image:"https://img.youtube.com/vi/wKqEwKP-E1E/hqdefault.jpg",
-    info:"Node JS assincrono | 10:18"
+    info:"Node JS assincrono | 10:18",
+    featured:true
   },
   {
     id:"DJJ1LezyCYU",
@@ -12,7 +13,8 @@ module.exports = [
   {
     id:"uonKHztGhko",
     image:"https://img.youtube.com/vi/uonKHztGhko/hqdefault.jpg",
-    info:"Background jobs com Node e Redis | 10:18"
+    info:"Background jobs com Node e Redis | 10:18",
+    featured:true
   },
   {
     id:"DDm0M_rZLJo",
@@ -22,11 +24,12 @@ module.exports = [
   {
     id:"EEeLl-M5YmI",
     image:"https://img.youtube.com/vi/EEeLl-M5YmI/hqdefault.jpg",
-    info:"Serie Web basic | Back-end Front-end | 10:18"
+    info:"Serie Web basic | Back-end Front-end | 10:18",
+    featured:true
   },
   {
     id:"X2RKRKdqqwM",
     image:"https://img.youtube.com/vi/X2RKRKdqqwM/hqdefault.jpg",
-    info:"Estrutura das pastas para o React | 10:18"
+    info:"Estrutura das pastas para o React | 10:18",
   },
 ]
